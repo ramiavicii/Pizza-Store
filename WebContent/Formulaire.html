@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>coordonnees de la livraison</title>
+</head>
+<style> 
+input[type=button], input[type=submit], input[type=reset] {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+</style>
+<body>
+<fieldset style="border-width:2px">
+<h1>COORDONNEES DE LIVRAISON</h1>
+<form action="http://localhost:8086/projetJEE/Commander" method=GET>
+<b>Nom:   </b><input type="text" name="nom"><br><br>
+<b>Prénom: </b><input type="text" name="prenom"><br><br>
+<b>Adresse:</b><input type="text" name="adresse"><br><br>
+<input type="submit" name="valider" value="Valider">
+</form>
+</fieldset>
+</body>
+</html>

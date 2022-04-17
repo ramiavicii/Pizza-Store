@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Pizza Store</title>
+</head>
+<style> 
+input[type=button], input[type=submit], input[type=reset] {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+label{
+color: #4CAF50;
+}
+
+</style>
+<body>
+<fieldset style="border-width:2px">
+<h1>DECOUVREZ NOS PIZZAS</h1>
+<form action="http://localhost:8086/projetJEE/Ajouter" action=GET>
+<input type="checkbox" name="pizza[]" value="MARGHERITA"><label ><b>MARGHERITA:</b> </label>Mozzarella,olives,origan <b>10$</b><br>
+<input type="checkbox" name="pizza[]" value="SALMON"><label ><b>SALMON:</b> </label>Mozzarella,olives,origan,saumon <b>12$</b><br>
+<input type="checkbox" name="pizza[]" value="NAPOLITAINE"><label ><b>NAPOLITAINE:</b> </label>Mozzarella,anchois,capres,origan,olives <b>12$</b><br>
+<input type="checkbox" name="pizza[]" value="FORMAGGI"><label ><b>FORMAGGI:</b> </label>Mozzarella,Gorgonozola,Emmental,Tallegio,Fontina <b>12$</b><br>
+<input type="checkbox" name="pizza[]" value="BOLOGNAISE"><label ><b>BOLOGNAISE</b></label> Mozzarella,viande hachée,origan,olives <b>13$</b><br>
+<input type="checkbox" name="pizza[]" value="TONO"><label ><b>TONO:</b> </label>Mozzarella,sauce romarin_capres_basilic,olives,thon <b>14$</b><br>
+<input type="checkbox" name="pizza[]" value="FRUTTI DI MARE"><label ><b>FRUTTI DI MARE:</b> </label>Mozzarella,fruits de ler,persillade <b>14$</b>
+
+<br><br>
+<input type="submit" name="submit" value="Ajouter au panier">
+<input type="submit" name="submit" value="Afficher ma commande">
+</form>
+</fieldset>
+</body>
+</html>
